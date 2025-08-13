@@ -12,7 +12,7 @@ test("handling table",async ({page})=>{
     expect(await columns.count()).toBe(4)
 
     const rows=await table.locator('tbody tr')
-    console.log('Number of rows:', await rows.count()) //5///check
+    console.log('Number of rows:', await rows.count()) //5
     expect(await rows.count()).toBe(5)
     
     //2) select check box for product 4

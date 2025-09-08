@@ -37,6 +37,7 @@ test('Prompt Dialog', async ({ page }) => {
   await page.goto('https://testautomationpractice.blogspot.com/');
 
   //Enabling dialog window handler
+  //samir munde check
   page.on('dialog', async dialog=>{
     expect(dialog.type()).toContain('prompt')
     expect(dialog.message()).toContain('Please enter your name:')
